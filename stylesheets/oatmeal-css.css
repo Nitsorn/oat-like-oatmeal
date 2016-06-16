@@ -1,0 +1,106 @@
+/* line 8, ../sass/oatmeal-css.scss */
+#oatmeal-nav {
+  z-index: 10001;
+  height: 40px;
+  width: 40px;
+  margin: 15px;
+  opacity: 1;
+  background-color: #D9DCDC;
+  border-radius: 20px;
+  transition: 0.2s ease;
+  background-position: center;
+  background-size: 25px;
+  background-image: url("../files/oatmeal.png");
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+}
+/* line 22, ../sass/oatmeal-css.scss */
+#oatmeal-nav:hover {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+/* line 28, ../sass/oatmeal-css.scss */
+#oatmeal-nav a {
+  width: 30px;
+  height: 30px;
+  margin: auto;
+}
+
+/* line 36, ../sass/oatmeal-css.scss */
+.courier {
+  font-family: 'courier new';
+}
+
+/* line 40, ../sass/oatmeal-css.scss */
+.snippet {
+  background-color: #E0E0E0;
+  font-size: 15px;
+  font-weight: 200;
+  font-family: 'courier new';
+  color: #51A4B2;
+  padding: 10px 70px 38px;
+  text-align: left;
+  line-height: 25px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: inset 0px 1px 2px 0px rgba(0, 0, 0, 0.67);
+}
+/* line 53, ../sass/oatmeal-css.scss */
+.snippet xmp {
+  white-space: pre-line;
+}
+
+/* line 60, ../sass/oatmeal-css.scss */
+#container #wrapper {
+  padding-top: 25vh;
+  width: 100%;
+  box-shadow: -2px 0px 1px 1px rgba(0, 0, 0, 0.25);
+  float: right;
+}
+@media screen and (min-width: 950px) {
+  /* line 60, ../sass/oatmeal-css.scss */
+  #container #wrapper {
+    width: calc(100% - 250px);
+  }
+}
+/* line 68, ../sass/oatmeal-css.scss */
+#container #wrapper .bolder .courier {
+  color: #69C6D7;
+}
+/* line 72, ../sass/oatmeal-css.scss */
+#container #wrapper #marginBottom {
+  margin-bottom: 50px;
+}
+/* line 76, ../sass/oatmeal-css.scss */
+#container #wrapper .section-bigger {
+  width: 92%;
+  display: block;
+  margin: auto;
+}
+/* line 82, ../sass/oatmeal-css.scss */
+#container #wrapper .section-title {
+  color: #51A4B2;
+  border-bottom: 5px solid #51A4B2;
+  margin-bottom: 15px;
+}
+/* line 87, ../sass/oatmeal-css.scss */
+#container #wrapper .column, #container #wrapper .columns {
+  padding: 2px;
+}
+/* line 89, ../sass/oatmeal-css.scss */
+#container #wrapper .column > div, #container #wrapper .columns > div {
+  font-size: 9px;
+  border-radius: 2px;
+  padding: 3px 5px;
+  text-align: center;
+  background-color: #BABBBB;
+}
+/* line 96, ../sass/oatmeal-css.scss */
+#container #wrapper .column.left-side div, #container #wrapper .columns.left-side div {
+  font-size: 9px;
+  border-radius: 2px;
+  padding: 3px 5px;
+  background-color: #9AD2DC;
+}

@@ -1,0 +1,379 @@
+/* Welcome to Compass. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+$blue: #51A4B2;
+$bluel: #69C6D7;
+$bluell: #9AD2DC;
+$grayd: #6A7173;
+$grayl: #EAE7E7;
+$grayb: #D9DCDC;
+
+@font-face {
+  font-family: 'regular';
+  src: url('../files/fonts/Montserrat-Regular.ttf');
+}
+@font-face {
+  font-family: 'bold';
+  src: url('../files/fonts/Montserrat-Bold.ttf');
+}
+
+
+a {
+  color: $bluell; }
+a:hover {
+  color: $bluell; }
+
+body,p,h4,ul,li {
+  font-family: 'regular';
+  color: $grayd;
+  .bold {
+    font-family: 'bold'
+  }
+}
+h2,h3,h5,h6 {
+  font-family: 'bold';
+}
+
+#nav {
+  height: 40px;
+  width: 40px;
+  margin: 15px;
+  transition: 1s ease;
+  opacity: 0;
+  background-color: #D9DCDC;
+  border-radius: 35px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  box-shadow: 0px 1px 2px rgba(black, 0.5);
+
+  a {
+    width: 30px;
+    height: 30px;
+    margin: auto;
+  }
+  .nav-button {
+    margin: auto;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: $grayl;
+    background-position: center;
+    background-size: 20px;
+    transition: 0.2s ease;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    cursor: pointer;
+    position: relative;
+    color: $blue;
+
+    &:hover:after {
+      position: absolute;
+      right: 40px;
+      background-color: #D9DCDC;
+      width: 120px;
+      height: 30px;
+      line-height: 30px;
+      top: 1px;
+      font-family: 'bold';
+      font-size: 14px;
+      color: $blue;
+      padding-left: 5px;
+
+    }
+
+    &:hover, &.selected {
+      -webkit-filter: grayscale(0%);
+      filter: grayscale(0%);
+    }
+    &.home {
+      background-image: url('../files/home.png');
+      &:hover:after {
+        content: 'HOME';
+      }
+    }
+    &.bio {
+      background-image: url('../files/bio.png');
+      &:hover:after {
+        content: 'ABOUT';
+      }
+    }
+    &.oatmeal {
+      background-image: url('../files/oatmeal.png');
+      &:hover:after {
+        content: 'OATMEAL.CSS';
+      }
+    }
+    &.dropdown {
+      background-image: url('../files/dropdown.png');
+      &:hover:after {
+        content: 'DROPDOWN';
+      }
+    }
+    &.links {
+      background-image: url('../files/links.png');
+      &:hover:after {
+        content: 'LINKS';
+      }
+    }
+  }
+}
+
+
+#container {
+  background-color: $blue;
+  height: 100vh;
+  width: 100%;
+  overflow: scroll;
+
+
+  #wrapper {
+    padding-top: 170px;
+    padding-bottom: 100px;
+    transition: 0.3s ease;
+    height: 200px;
+    transition: 0.5s ease;
+    overflow: hidden;
+
+    .main {
+      height: auto;
+      overflow: hidden;
+      background-color: transparent;
+      width: 960px;
+      position: relative;
+      border-radius: 3px;
+      margin: auto;
+      transition: 1s ease;
+      @media screen and (max-width: 800px) {
+        width: 600px
+      }
+      @media screen and (max-width: 550px) {
+        width: 380px
+      }
+
+      h2 {
+        color: $bluel;
+        text-align: center;
+        font-family: 'bold';
+        padding-top: 40px;
+        transition: 0.4s ease;
+      }
+
+      h4 {
+        color: $bluel;
+        text-align: center;
+      }
+
+      h5 {
+        color: $blue;
+        border-bottom: 5px solid $blue;
+        margin-bottom: 15px;
+      }
+
+      h6 {
+        color: $grayd;
+        font-size: 15px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        &.blue {
+          color: $blue;
+          font-family: 'regular'
+        }
+      }
+      .light {
+        font-family: 'regular'
+      }
+      .entry {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin: auto;
+        display: block;
+        margin-bottom: 20px;
+        background-color: $bluel;
+        border: 2px solid $bluel;
+        transition: 1s ease;
+        padding: 0px;
+      }
+
+      #icons {
+        height: 100px;
+        width: 90%;
+        margin: auto;
+        margin-top: 80px;
+        transition: 2.5s ease;
+        opacity: 0.5;
+
+        .icon {
+          width: 19%;
+          height: 100px;
+          display: inline-block;
+          margin: 0px;
+          background-repeat: no-repeat;
+          background-size: auto 60px;
+          background-position: center;
+          transition: 0.2s ease;
+
+          @media screen and (max-width: 800px) {
+            background-size: auto 40px;
+          }
+
+          &.dribbble {
+            background-image: url('../files/dribbble.png');
+          }
+          &.website {
+            background-image: url('../files/website.png');
+          }
+          &.github {
+            background-image: url('../files/github.png');
+          }
+          &.email {
+            background-image: url('../files/email.png');
+          }
+          &.linkedin {
+            background-image: url('../files/linkedin.png');
+          }
+        }
+      }
+
+      .left,.right {
+        padding: 15px;
+        margin-top: 100px;
+        opacity: 0.3;
+        display: inline-block;
+        transition: 2.5s ease;
+      }
+
+      .left {
+        @media screen and (min-width: 550px) {
+          width: 33.333%;
+        }
+        padding: 15px;
+        &>div {
+          margin-bottom: 20px;
+        }
+        .skills {
+          // border: 1px solid red;
+
+          .skill-wrapper {
+            width: 100%;
+            height: 30px;
+            margin: 10px 0px;
+            background-color: $grayb;
+            overflow: hidden;
+            cursor: default;
+              .skill-bar {
+                height: 30px;
+                &.js {
+                  width: 80%;
+                  &:hover {
+                    width: 85%;
+                  }
+                }
+                &.jq {
+                  width: 76%;
+                  &:hover {
+                    width: 81%;
+                  }
+                }
+                &.react {
+                  width: 82%;
+                  &:hover {
+                    width: 87%;
+                  }
+                }
+                &.ng {
+                  width: 60%;
+                  &:hover {
+                    width: 65%;
+                  }
+                }
+                &.css {
+                  width: 86%;
+                  &:hover {
+                    width: 91%;
+                  }
+                }
+                &.rails {
+                  width: 55%;
+                  &:hover {
+                    width: 60%;
+                  }
+                }
+                &.psd {
+                  width: 65%;
+                  &:hover {
+                    width: 70%;
+                  }
+                }
+                &.ai {
+                  width: 68%;
+                  &:hover {
+                    width: 73%;
+                  }
+                }
+                &.sk {
+                  width: 79%;
+                  &:hover {
+                    width: 84%;
+                  }
+                }
+
+                display: inline-block;
+                transition: 0.2s ease;
+                background-color: $blue;
+                &:hover {
+                  p {
+                    color: $grayb;
+                  }
+                }
+                p {
+                  transition: 0.2s ease;
+                  color: $bluell;
+                  padding:3px 0px 0px 20px;
+
+                }
+              }
+          }
+        }
+
+        .projects {
+          a {
+            text-decoration: none;
+            h6 {
+              transition: 0.2s ease;
+              background-color: transparent;
+              &:hover {
+                color: $blue;
+                background-color: $grayl;
+              }
+            }
+          }
+          p {
+            color: $blue;
+          }
+        }
+      }
+      .right {
+        @media screen and (min-width: 550px) {
+          margin-left: 5px;
+          width: 65%;
+        }
+        .professional {
+          ul {
+            margin-top: 10px;
+            li {
+              font-size: 14px;
+            }
+          }
+        }
+        .more {
+          p {
+            margin-top: 10px;
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+$blue: #51A4B2;
+$bluel: #69C6D7;
+$bluell: #9AD2DC;
+$grayd: #6A7173;
+$grayl: #EAE7E7;
+$grayb: #D9DCDC;
+
+#container {
+  #wrapper {
+    width: 100%;
+    box-shadow: -2px 0px 1px 1px rgba(black, 0.25);
+    float: right;
+    @media screen and (min-width: 950px) {
+      width: calc(100% - 250px);
+    }
+  }
+}
