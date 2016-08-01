@@ -59,6 +59,11 @@
   box-sizing: border-box;
 }
 
+/* line 58, ../sass/oatmeal.scss */
+* {
+  box-sizing: border-box;
+}
+
 /* For devices larger than 550px */
 @media (min-width: 550px) {
   /* line 61, ../sass/oatmeal.scss */

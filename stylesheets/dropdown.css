@@ -62,13 +62,19 @@ p, div, ul, li {
   flex-direction: column;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
 }
-/* line 61, ../sass/dropdown.scss */
+@media screen and (max-width: 700px) {
+  /* line 49, ../sass/dropdown.scss */
+  #nav {
+    bottom: 0;
+  }
+}
+/* line 64, ../sass/dropdown.scss */
 #nav a {
   width: 30px;
   height: 30px;
   margin: auto;
 }
-/* line 67, ../sass/dropdown.scss */
+/* line 70, ../sass/dropdown.scss */
 #nav .nav-button {
   margin: auto;
   width: 30px;
@@ -83,7 +89,7 @@ p, div, ul, li {
   cursor: pointer;
   position: relative;
 }
-/* line 81, ../sass/dropdown.scss */
+/* line 84, ../sass/dropdown.scss */
 #nav .nav-button:hover:after {
   position: absolute;
   right: 40px;
@@ -97,60 +103,60 @@ p, div, ul, li {
   color: #51A4B2;
   padding-left: 5px;
 }
-/* line 96, ../sass/dropdown.scss */
+/* line 99, ../sass/dropdown.scss */
 #nav .nav-button:hover, #nav .nav-button.selected {
   -webkit-filter: grayscale(0%);
   filter: grayscale(0%);
 }
-/* line 101, ../sass/dropdown.scss */
+/* line 104, ../sass/dropdown.scss */
 #nav .nav-button.home {
   background-image: url("../files/home.png");
 }
-/* line 103, ../sass/dropdown.scss */
+/* line 106, ../sass/dropdown.scss */
 #nav .nav-button.home:hover:after {
   content: 'HOME';
 }
-/* line 107, ../sass/dropdown.scss */
+/* line 110, ../sass/dropdown.scss */
 #nav .nav-button.bio {
   background-image: url("../files/bio.png");
 }
-/* line 109, ../sass/dropdown.scss */
+/* line 112, ../sass/dropdown.scss */
 #nav .nav-button.bio:hover:after {
   content: 'ABOUT';
 }
-/* line 113, ../sass/dropdown.scss */
+/* line 116, ../sass/dropdown.scss */
 #nav .nav-button.oatmeal {
   background-image: url("../files/oatmeal.png");
 }
-/* line 115, ../sass/dropdown.scss */
+/* line 118, ../sass/dropdown.scss */
 #nav .nav-button.oatmeal:hover:after {
   content: 'OATMEAL.CSS';
 }
-/* line 119, ../sass/dropdown.scss */
+/* line 122, ../sass/dropdown.scss */
 #nav .nav-button.dropdown {
   background-image: url("../files/dropdown.png");
 }
-/* line 121, ../sass/dropdown.scss */
+/* line 124, ../sass/dropdown.scss */
 #nav .nav-button.dropdown:hover:after {
   content: 'DROPDOWN';
 }
-/* line 125, ../sass/dropdown.scss */
+/* line 128, ../sass/dropdown.scss */
 #nav .nav-button.links {
   background-image: url("../files/links.png");
 }
-/* line 127, ../sass/dropdown.scss */
+/* line 130, ../sass/dropdown.scss */
 #nav .nav-button.links:hover:after {
   content: 'LINKS';
 }
 
-/* line 135, ../sass/dropdown.scss */
+/* line 138, ../sass/dropdown.scss */
 #container {
   background-color: #13BFDC;
   height: 100vh;
   width: 100%;
   overflow: scroll;
 }
-/* line 142, ../sass/dropdown.scss */
+/* line 145, ../sass/dropdown.scss */
 #container #wrapper {
   background-color: #EAE7E7;
   padding-top: 100px;
@@ -160,7 +166,7 @@ p, div, ul, li {
   overflow: scroll;
   width: 100%;
 }
-/* line 155, ../sass/dropdown.scss */
+/* line 158, ../sass/dropdown.scss */
 #container #wrapper .main {
   height: auto;
   overflow: hidden;
@@ -173,18 +179,18 @@ p, div, ul, li {
   padding-bottom: 20px;
 }
 @media screen and (max-width: 950px) {
-  /* line 155, ../sass/dropdown.scss */
+  /* line 158, ../sass/dropdown.scss */
   #container #wrapper .main {
     width: 80%;
   }
 }
 @media screen and (max-width: 550px) {
-  /* line 155, ../sass/dropdown.scss */
+  /* line 158, ../sass/dropdown.scss */
   #container #wrapper .main {
     width: 380px;
   }
 }
-/* line 172, ../sass/dropdown.scss */
+/* line 175, ../sass/dropdown.scss */
 #container #wrapper .main h4 {
   color: #51A4B2;
   text-align: center;
@@ -192,35 +198,35 @@ p, div, ul, li {
   padding-top: 40px;
   transition: 0.4s ease;
 }
-/* line 180, ../sass/dropdown.scss */
+/* line 183, ../sass/dropdown.scss */
 #container #wrapper .main h5 {
   color: #69C6D7;
   text-align: center;
 }
-/* line 185, ../sass/dropdown.scss */
+/* line 188, ../sass/dropdown.scss */
 #container #wrapper .main h6 {
   color: #6A7173;
   font-size: 15px;
   margin-top: 5px;
   margin-bottom: 5px;
 }
-/* line 190, ../sass/dropdown.scss */
+/* line 193, ../sass/dropdown.scss */
 #container #wrapper .main h6.blue {
   color: #51A4B2;
   font-family: "regular";
 }
-/* line 195, ../sass/dropdown.scss */
+/* line 198, ../sass/dropdown.scss */
 #container #wrapper .main .section-title {
   color: #51A4B2;
   border-bottom: 5px solid #51A4B2;
   font-size: 15px;
   margin-bottom: 15px;
 }
-/* line 202, ../sass/dropdown.scss */
+/* line 205, ../sass/dropdown.scss */
 #container #wrapper .main .light {
   font-family: "regular";
 }
-/* line 205, ../sass/dropdown.scss */
+/* line 208, ../sass/dropdown.scss */
 #container #wrapper .main .entry {
   width: 30px;
   height: 30px;
@@ -233,7 +239,7 @@ p, div, ul, li {
   transition: 1s ease;
   padding: 0px;
 }
-/* line 218, ../sass/dropdown.scss */
+/* line 221, ../sass/dropdown.scss */
 #container #wrapper .main #icons {
   height: 100px;
   width: 90%;
@@ -242,7 +248,7 @@ p, div, ul, li {
   transition: 2.5s ease;
   opacity: 1;
 }
-/* line 226, ../sass/dropdown.scss */
+/* line 229, ../sass/dropdown.scss */
 #container #wrapper .main #icons .icon {
   width: 19%;
   height: 100px;
@@ -254,28 +260,28 @@ p, div, ul, li {
   transition: 0.2s ease;
 }
 @media screen and (max-width: 800px) {
-  /* line 226, ../sass/dropdown.scss */
+  /* line 229, ../sass/dropdown.scss */
   #container #wrapper .main #icons .icon {
     background-size: auto 40px;
   }
 }
-/* line 240, ../sass/dropdown.scss */
+/* line 243, ../sass/dropdown.scss */
 #container #wrapper .main #icons .icon.dribbble {
   background-image: url("../files/dribbble.png");
 }
-/* line 243, ../sass/dropdown.scss */
+/* line 246, ../sass/dropdown.scss */
 #container #wrapper .main #icons .icon.website {
   background-image: url("../files/website.png");
 }
-/* line 246, ../sass/dropdown.scss */
+/* line 249, ../sass/dropdown.scss */
 #container #wrapper .main #icons .icon.github {
   background-image: url("../files/github.png");
 }
-/* line 249, ../sass/dropdown.scss */
+/* line 252, ../sass/dropdown.scss */
 #container #wrapper .main #icons .icon.email {
   background-image: url("../files/email.png");
 }
-/* line 252, ../sass/dropdown.scss */
+/* line 255, ../sass/dropdown.scss */
 #container #wrapper .main #icons .icon.linkedin {
   background-image: url("../files/linkedin.png");
 }

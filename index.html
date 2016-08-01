@@ -3,31 +3,38 @@
   <head>
     <meta charset="utf-8">
     <title>Oat W. | My Resume</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="stylesheets/screen.css" rel="stylesheet" type="text/css" />
     <link href="stylesheets/home.css" rel="stylesheet" type="text/css" />
     <link href="stylesheets/oatmeal.css" rel="stylesheet" type="text/css" />
     <link href="stylesheets/normalize.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/png" href="./files/favicon.png" />
   </head>
   <body>
+    <div id='contact-me'>
+      <a href="mailto:nitsorn.oat@gmail.com?Subject=Hello%20Oat!" target="_top"><div id='contact-me-cover'></div></a>
+    </div>
     <div class='nav on-right fixed gap' id='nav'>
       <a href="index.html"><div class="nav-button image home selected"></div></a>
       <a href="about.html"><div class="nav-button image bio"></div></a>
+      <a href='./dancefloor.html'><div class="nav-button image dropdown"></div></a>
       <a href="http://oatmealcss.com/" target="_blank"><div class="nav-button image oatmeal"></div></a>
-      <a href='dropdown.html'><div class="nav-button image dropdown"></div></a>
-      <a href='links.html'><div class="nav-button image links"></div></a>
+      <!-- <a href='links.html'><div class="nav-button image links"></div></a> -->
     </div>
     <div id='container'>
       <div id='wrapper'>
         <div class='main row'>
+          <br />
+          <div id='picture' class="image shadowed"></div>
+          <br />
           <h2 id='oat'>OAT WONGSAJJATHITI</h2>
           <h4>UX/ FRONT END DEVELOPER</h4>
-          <div class="button entry"></div>
+          <div class="download-button"><a href='./files/resume.pdf' target='_blank'>DOWNLOAD RESUME</a></div>
           <div id='icons'>
             <a href="https://dribbble.com/oatmobile" target="_blank"><div class='icon dribbble'>
 
             </div></a>
-            <a href="http://oatlikeoatmeal.com/" target="_blank"><div class='icon website'>
+            <a href="http://codepen.io/oatmobile/" target="_blank"><div class='icon codepen'>
 
             </div></a>
             <a href="https://github.com/Nitsorn" target="_blank"><div class='icon github'>
@@ -40,6 +47,27 @@
 
             </div></a>
           </div>
+          <br  />
+          <div id='summary' class="padded">
+            <h5 class="align-left">You have found a rare pokemon! It appears to be a ... RAPIDASH!</h5>
+            <p>
+              No, here. Yes, I am talking about myself. Put down your phone.
+            </p>
+            <p>
+              Hi there, my name is Oat, and I am a full-time <span class="bold blue-text">front end developer</span>, <span class='bold blue-text'>part-time UX designer</span> and <span class="bold blue-text">freelance portrait artist</span>. You are probably here because I applied for a front-end developer position at your company, so please let me explain myself.
+            </p>
+            <p>
+              I am currently a front-end lead at a small web agency in Vancouver, Canada, where I am responsible for designing and developing beautiful web applications, keeping the clients happy, and assisting our Wordpress developers in moving that one button just a little higher, no, a bit more, ok great perfect!
+            </p>
+            <p>
+              Prior to my role as a lead, I began my employment at <span class="bold blue-text">The Coding Bull</span> as a graphic designer, with little coding experience. Within the past year, I have managed to accelerate my skill in building javascript web applications through feeding off knowledge of talented developers around me, working past 10 at night, doing my own side projects, and eventually started getting paid to do what I love, that is to code.
+            </p>
+            <p class="bold blue-text">
+              I am a self taught front-end developer with a passion of great design and a respect of great functionality. With high work ethic and genuine desire to build great products, I enjoy surrounding myself with those of the same qualities, and trive to constantly improve myself and consequently, lives of those around me. I have found myself to gain energy from other people's hapiness, and I maintain that mentality in my work.
+            </p>
+
+          </div>
+          <br  />
           <div class="four columns left">
             <div class='skills'>
               <div class='skill-wrapper'>
@@ -120,11 +148,14 @@
             <div class='projects'>
               <h5>PROJECTS</h5>
               <a href="http://swipswap.herokuapp.com/" target="_blank"><h6>SWIP SWAP</h6></a>
+              <a href="https://www.npmjs.com/package/react-dropform" target="_blank"><h6>DROPFORM</h6></a>
+              <a href="http://oatmealcss.com/" target="_blank"><h6>OATMEALCSS</h6></a>
               <a href="http://littlestagings.herokuapp.com/" target="_blank"><h6>LITTLEFLEETS</h6></a>
-              <a href="http://thelegallink.ca/" target="_blank"><h6>THE LEGAL LINK</h6></a>
-              <a href="http://new.38dollarglasses.com/" target="_blank"><h6>38 DOLLAR GLASSES</h6></a>
               <a href="http://hellosimpletax.com/" target="_blank"><h6>SLASA MCGILL</h6></a>
               <a href="http://www.helloaxiomzen.com/" target="_blank"><h6>TAO INTERIORS</h6></a>
+              <a href="https://www.npmjs.com/package/simple-react-progress-bar" target="_blank"><h6>PROGRESS BAR</h6></a>
+              <a href="http://thelegallink.ca/" target="_blank"><h6>THE LEGAL LINK</h6></a>
+              <a href="https://play.google.com/store/apps/details?id=com.gimmeofficial.breadaffair&hl=en" target="_blank"><h6>A BREAD AFFAIR</h6></a>
               <a href="http://oatmeeel.com/" target="_blank"><h6>PRINCESS & THE CODE</h6></a>
               <p>
                 *I am responsible for both the design and development of all above. Some are incomplete and on temporary domains.
@@ -140,7 +171,7 @@
               </h6>
               <ul>
                 <li class='align-justify'>
-                  <span class="bold">UX Lead:</span> Lead and manage the UX development/ design end of all our beautiful products. Created <a href='oatmeal-css.html' target='_blank'>oatmeal.css</a>, a UI Framework that is currently used at the company, built on top of skeleton with SASS. Assess the cross-browser/platform compatibility of our apps and websites.
+                  <span class="bold">UX Lead:</span> Lead and manage the UX development/ design end of all our beautiful products. Created <a href='http://oatmealcss.com/' target='_blank'>oatmeal.css</a>, a UI Framework that is currently used at the company, built on top of skeleton with SASS. Assess the cross-browser/platform compatibility of our apps and websites. Design wireframes, logos using Adobe and Sketch.
                 </li>
                 <li class="align-justify">
                   <span class="bold">Front-end Lead:</span> Design and implement front-end architecture for many of our projects using <b>React.js</b>, with <b>Rails</b> or <b>Node</b> back-end. Maintaining high level of reusability and scalability and an efficient data flow in components. Experience dealing with multiple third-party APIs such as <b>Google Maps, Parse, Stripe, Rails, Postgres</b> and <b>Firebase</b>.
@@ -183,15 +214,20 @@
             <div class='more'>
               <h5>A BIT MORE ABOUT ME</h5>
               <p>Hi! Yes, my name is Oat, like oatmeal.</p>
-              <p>I am originally from Thailand, but grew up in India.</p>
-              <p>I am 21 years old.</p>
+              <p>I am originally from Thailand.</p>
               <p>I dance and draw on a semi-professional level.</p>
+              <p>I'd studied in an Indian Boarding School for 8 years before university.</p>
               <p>I am ambidextrous.</p>
             </div>
+            <br />
+            <br />
+            <br />
+            <br />
           </div>
         </div>
       </div>
     </div>
+
   </body>
   <script src='./jquery.js'></script>
   <script src='nav.js'></script>
